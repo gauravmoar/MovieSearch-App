@@ -16,7 +16,7 @@ function App() {
 
   const findMovies = async () => {
     const response = await fetch(
-      ` http://www.omdbapi.com/?s=${query}&apikey=25a122a3`
+      ` https://www.omdbapi.com/?s=${query}&apikey=25a122a3`
     );
     const data = await response.json();
     if (data.Response === "True") {
